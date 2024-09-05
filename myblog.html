@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Blog</title>
+    <link rel="stylesheet" href="CSS/headfoot.css">
+    <script src="JS/scripts.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="CSS/myblog.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+      <!-- Header -->
+    <header>
+        <div class="search-social flex">
+            <div class="search-bar flex">
+                <div class="button_search">
+                    <button type="button" id="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div class="search-container ">
+                    <input type="text" placeholder="Search...">
+                </div>
+                <div class="social-icons-header">
+                    <a href="#"><i class="social-icons-header fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="social-icons-header fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="social-icons-header fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="social-icons-header fa-brands fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="header-container flex">
+            <div class="logo">
+                <h1 class="site-title">Catnguyen</h1>
+                <div class="photography">photographer</div>
+            </div>
+            <div class="menu-icon">&#9776;</div>
+        <nav class="flex">
+            <ul class=" menu flex">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="myblog.html">My Blog</a></li>
+                <li><a href="test.html">About</a></li>
+                <li><a href="#footer-content1">Contact</a></li>
+                <li>
+                    <button><span id="name-user"></span><a href="login.html"><i class="fa-solid fa-user"></i></a></button>
+                    <script>
+                        // Lấy thông tin đăng nhập từ localStorage
+                        const username = localStorage.getItem('username');
+                        const password = localStorage.getItem('password')
+                        // Kiểm tra và hiển thị thông điệp chào mừng
+                        if (username) {
+                            document.getElementById('name-user').textContent = username + ' ';
+                        }
+                    </script>
+                </li>
+                <li>
+                    <button id="logoutButton"><a href="index.html"><i class="fa-solid fa-sign-in-alt"></i></a></button>
+                </li>
+            </ul>
+        </nav>
+        </div>   
+        <hr class="line-below">  
+    </header>  
+    <aside>
+        <nav id="menu">
+            <ul>
+                <li><a href="#" data-target="photography-tips" onclick="showContent('photography-tips', event)">Photography Tips</a></li>
+                <li><a href="#" data-target="gallery" onclick="showContent('gallery', event)">Gallery</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <main>
+        
+        <div class="tips" id="photography-tips-content" >
+            
+            <div class="content">
+                <a href="tip1.html" class="tip"> 
+                    <img src="images/me.jpg" alt="tips" class="tip-img">
+                        <div class="description">
+                            <h1 class="title">Những lầm tưởng kinh dị về nghề Photographer</h1>
+                            <span class="date-time">By CatNguyen <i class="fa-solid fa-clock"></i> 3 tháng 9,2024</span>
+                            <span class="text">Trải qua bao nhiêu năm làm Photographer, mình có đúc kết được mấy điều mình đã từng lầm tưởng về nghề này.  Mình liệt kê nhẹ nhàng mấy điều dưới đây, mọi người thấy đúng sai thì chia sẻ ý kiến cá nhân ở dưới nhé. </span>
+                        </div>    
+                                                         
+                </a>
+                <a href="tip1.html" class="READMORE">Đọc tiếp...</a> 
+            </div>
+        
+            <div class="content">
+                <a href="tip2.html" class="tip">
+                    <img src="images/cat.jpg" alt="tips" class="tip-img">
+                        <div class="description">
+                            <h1 class="title">Khi nào nên chuyển sang dùng ảnh đen trắng</h1>
+                            <span class="date-time">By CatNguyen <i class="fa-solid fa-clock"></i> 12 tháng 8,2024</span>
+                            <span class="text">Trong một bộ album, hiển nhiên hình màu vẫn nhiều hơn đen trắng, màu sắc phong phú mang lại chiều sâu lẫn cảm xúc cho bức hình hơn đúng không. Tuy nhiên, vẫn có những lý do rất thuyết phục để chọn đen trắng thay vì ảnh màu. Dưới đây mình liệt kê vài lý do điển hình.  </span>
+                        </div>    
+                                        
+                </a>
+                <a href="tip2.html" class="READMORE">Đọc tiếp...</a> 
+            </div>
+        </div>
+    
+    
+            
+        <div id="galleries-container">
+            <div class="galleries" id="gallery-content" style="display: none;">
+                <div class="content-gal">
+                    <a href="gallery1.html">
+                        <img src="images/34.jpeg" alt="Photography Tips 1">
+                        <div class="description-gallery">
+                            <span class="tit">Tùng & Thanh || Wedding Journalism</span>
+                            <span class="date">By CatNguyen <i class="fa-solid fa-clock"></i> 30 tháng 8,2024</span>
+                        </div>
+                        
+                    </a>
+                </div>
+                <div class="content-gal">
+                    <a href="gallery2.html">
+                        <img src="images/wd7.jpeg" alt="Photography Tips 1">
+                        <div class="description-gallery">
+                            <span class="tit">Thắng & Hà || Wedding Journalism</span>
+                            <span class="date">By CatNguyen <i class="fa-solid fa-clock"></i> 9 tháng 3,2022</span>
+                        </div>
+                    </a>
+                </div>   
+                
+                <div class="content-gal">
+                    <a href="#">
+                        <img src="images/cp.jpg" alt="Photography Tips 1">
+                        <div class="description-gallery">
+                            <span class="tit"></span>
+                            <span class="date">By CatNguyen <i class="fa-solid fa-clock"></i> 30 tháng 8,2024</span>
+                        </div>
+                    </a>
+                </div>   
+                <div class="content-gal">
+                    <a href="#">
+                        <img src="images/cp3.jpg" alt="Photography Tips 1">
+                        <div class="description-gallery">
+                            <span class="tit">Photography Tips 1</span>
+                            <span class="date">By CatNguyen <i class="fa-solid fa-clock"></i> 30 tháng 8,2024</span>
+                        </div>
+                    </a>
+                </div> 
+                      
+                                      
+            </div> 
+        </div>  
+
+    </main>
+    <div id="footer-content1"></div>
+    <footer>
+        <div class="footer-content">
+            <h3>Let me know what's on your mind</h3>
+            <form id="contact-form">
+                <div class="form-left">
+                    <div class="input-container">
+                        <label for="first-name">First name</label>
+                        <input class="first-name" type="text" id="first-name">
+                    </div>
+                    <div class="input-container">
+                        <label for="email-footer">Email *</label>
+                        <input class="email" type="email" id="email-footer">
+                    </div>
+                </div>
+                <div class="form-right">
+                    <div class="input-container">
+                        <label for="last-name">Last Name</label>
+                        <input class="last-name" type="text" id="last-name">
+                    </div>
+                </div>
+            </form>
+                <div class="input-container">
+                    <label for="message">Leave us a message...</label>
+                    <input class="message" type="text" id="message">
+                </div>
+                <div class="button-submit">
+                    <button class="submit-button" type="submit">Submit</button>
+                </div>
+            </div>
+            <div class="content-footer">
+                <p>&copy;2024 by Cat Nguyen Blog. All Rights Reserved.</p>
+                <p>The unauthorized reproduction of any content on this website is illegal.</p>
+            </div>
+    </footer>
+    <script src="JS/scripts.js"></script>
+    <script src="JS/myblog.js"></script>
+    <script src="JS/tip.js"></script>
+
+
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <!-- <link rel="stylesheet" href="CSS/headfoot.css"> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="CSS/test.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Prata&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sevillana&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Dosis:wght@200..800&family=Lora:ital,wght@0,400..700;1,400..700&family=Prata&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sevillana&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Prata&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sevillana&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:wght@400" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="search-social flex">
+        <div class="search-bar flex">
+            <div class="button_search">
+                <button type="button" id="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="search-container ">
+                <input type="text" placeholder="Search...">
+            </div>
+            <div class="social-icons-header">
+                <a href="#"><i class="social-icons-header fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="social-icons-header fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="social-icons-header fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="social-icons-header fa-brands fa-pinterest"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="header-container flex">
+        <div class="logo">
+            <h1 class="site-title">Catnguyen</h1>
+            <div class="photography">photographer</div>
+        </div>
+        <div class="menu-icon">&#9776;</div>
+    <nav class="flex">
+        <ul class=" menu flex">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="myblog.html">My Blog</a></li>
+            <li><a href="test.html">About</a></li>
+            <li><a href="#footer-content1">Contact</a></li>
+            <li>
+                <button><span id="name-user"></span><a href="login.html"><i class="fa-solid fa-user"></i></a></button>
+                <script>
+                    // Lấy thông tin đăng nhập từ localStorage
+                    const username = localStorage.getItem('username');
+                    const password = localStorage.getItem('password')
+                    // Kiểm tra và hiển thị thông điệp chào mừng
+                    if (username) {
+                        document.getElementById('name-user').textContent = username + ' ';
+                    }
+                </script>
+            </li>
+            <li>
+                <button id="logoutButton"><a href="index.html"><i class="fa-solid fa-sign-out-alt"></i></a></button>
+            </li>
+        </ul>
+    </nav>
+    </div>   
+    <hr class="line-below">  
+</header>  
+  <div class="ads">
+    <img src="images/L1000201.jpg" alt="Giới thiệu bản thân" class="ads-image zoom-on-scroll">
+    <div class="text">
+        <h4>ARE YOU LOOKING FOR A PERSONAL PHOTOGRAPHER?</h4>
+        <h3>Let's browse my blog before you make a decision</h3>
+        <h3>Or</h3>
+        <a href="#footer-content1" class="book-button">BOOK ME</a>
+    </div>
+  </div>
+  <div class="about-container">
+        <h1 class="about-title">Introduction</h1>
+        <div class="content">
+            <img src="images/tip1.jpg" alt="Giới thiệu bản thân" class="intro-image">
+            <div class="about-content">
+                <h1>Hi, I'm Cat Nguyen</h1><br>
+                <p>Chào mừng bạn đến với blog của mình! Mình là Cát Nguyễn. Gần 8 năm học tập, sinh sống và làm việc tại Châu Âu (thủ đô Praha). Cát muốn mang kiến thức và kinh nghiệm về phong trào ảnh cưới màu phim đương đại về Việt Nam.</p>
+                <p>Mình tạo ra blog này với nhiều mục tiêu, như là trưng bày gallery, chia sẻ những tips chụp ảnh hay ho, hay là post về những câu chuyện bên lề công việc, những trải nghiệm, bài học, thử những thể loại nhiếp ảnh khác nhau cũng như học hỏi và kết nối với mọi người. Hy vọng bạn sẽ tìm thấy điều gì đó thú vị và hữu ích trên blog của Cát nhé.</p><br>
+                <p>Welcome to my blog! I am Cat Nguyen. I am a photographer specializing in wedding photography with contemporary film colors. This blog is to share galleries, interesting photography tips, and stories about my life. I hope you find something interesting and useful on my blog.</p>
+            </div>
+        </div>  
+        <h1 class="about-title">Review of our clients</h1>
+  <div class="image-container">
+    <img src="images/cp.jpg" alt="Image 1">
+    <img src="images/cp2.jpg" alt="Image 2">
+    <img src="images/cp3.jpg" alt="Image 3">
+    <img src="images/wd7.jpeg" alt="Image 3">
+    <img src="images/35.jpg" alt="Image 3">
+    <img src="images/cp4.jpg" alt="Image 3">
+    <div class="overlay-text">
+        <p><b>Hồng Hạnh Trần</b><br>The wedding is a big day. Two souls merge into one to start a life of common dreams and joy. My friend on her wedding day rightfully chose Iva in order to capture and preserve the unforgettable moments of that day. Iva is a photographer that can feel the atmosphere of the wedding and record accurately the happiness, the love and all blessings for the bride and the groom.
+        <br>My friend and I were really lucky to find her. For a long time, we have followed Iva's Facebook and liked her photos. Every album of hers is a beautiful life story; the love between a bride and a groom, the innocence of children, the femininity, the feminine charm.
+        <br>Every time I look at my friend's wedding pictures, I feel like I’m back to the joyful atmosphere of the day. I recall the smiles, the suspense, the praises which Iva precisely captured. I also remember her enthusiasm, while Iva was running with her camera to each corner, each scene making those precious moments immortal.
+        <br>Cat, thank you for your amazing work.</p>
+        <p><b>Tammy and Colin</b><br>For English speakers who are considering Phototeller for your couple/wedding shoot, my husband and I would highly recommend Phototeller. They are professional, passionate, put in a lot of effort to turn out a beautiful and meaningful photo album. They are focused on capturing raw emotions and natural expressions. Their style is differentiated from most photography studios and is the key reason why we chose them. We thank you for a wonderful photo album and would not hesitate to recommend any couple to work with you.</p>
+        <p><b>Bình và Ngân</b><br>Đầu tiên em rất cám ơn PHOTOTELLER TEAM đã thực hiện 1 bộ ảnh pre-wedding thiệt sự xuất sắc cho vợ chồng em. Khi chụp hình với team, em rất thích những điểm sau đây:<br>- Thời gian chụp hình nhanh mà hiệu quả: Dù chụp ngoài biển nhưng CD CR k hề phải chịu nắng vì chỉ chụp lúc bình minh và hoàng hôn. Đã được tư vấn trước là 2 thời điểm này chụp hình rất đẹp nhưng hình ra còn hơn cả mong đợi.<br>- Ekip Phototeller nắm bắt khoảnh khắc rất tốt, ra những tấm hình rất có phong cách của CD CR, k cặp nào lẫn với cặp nào. Quan trọng là hình nào nhìn cũng tự nhiên, k bị gượng gạo.<br>
+            - Màu hình phải nói là xuất sắc, nhìn rất thích, k thể diễn tả bằng lời =))<br>- Một điểm nữa là team mình rất chiều em, chịu lắng nghe các ý kiến, mong muốn của em (vì em biết em rất đòi hỏi).<br>Tổng các điểm cộng lớn và trừ nhỏ, em tặng team 4.99 sao nha hihi<br>From Ngân & Bình with love</p>
+    </div>
+  </div>
+  </div>
+  <div id="footer-content1"></div>
+  <footer>
+    <div class="footer-content">
+        <h3>Let me know what's on your mind</h3>
+        <form id="contact-form">
+            <div class="form-left">
+                <div class="input-container">
+                    <label for="first-name">First name</label>
+                    <input class="first-name" type="text" id="first-name">
+                </div>
+                <div class="input-container">
+                    <label for="email-footer">Email *</label>
+                    <input class="email" type="email" id="email-footer">
+                </div>
+            </div>
+            <div class="form-right">
+                <div class="input-container">
+                    <label for="last-name">Last Name</label>
+                    <input class="last-name" type="text" id="last-name">
+                </div>
+            </div>
+        </form>
+            <div class="input-container">
+                <label for="message">Leave us a message...</label>
+                <input class="message" type="text" id="message">
+            </div>
+            <div class="button-submit">
+                <button class="submit-button" type="submit">Submit</button>
+            </div>
+        </div>
+        <div class="content-footer">
+            <p>&copy;2024 by Cat Nguyen Blog. All Rights Reserved.</p>
+            <p>The unauthorized reproduction of any content on this website is illegal.</p>
+        </div>
+</footer>
+  
+<script src="JS/about.js"></script>
+</body>
+</html>

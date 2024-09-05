@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KHI NÀO NÊN CHUYỂN SANG DÙNG ẢNH ĐEN TRẮNG</title>
+    <link rel="stylesheet" href="CSS/headfoot.css">
+    <link rel="stylesheet" href="CSS/tip.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="search-social flex">
+            <div class="search-bar flex">
+                <div class="button_search">
+                    <button type="button" id="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div class="search-container ">
+                    <input type="text" placeholder="Search...">
+                </div>
+                <div class="social-icons-header">
+                    <a href="#"><i class="social-icons-header fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="social-icons-header fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="social-icons-header fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="social-icons-header fa-brands fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="header-container flex">
+            <div class="logo">
+                <h1 class="site-title">Catnguyen</h1>
+                <div class="photography">photographer</div>
+            </div>
+            <div class="menu-icon">&#9776;</div>
+        <nav class="flex">
+            <ul class=" menu flex">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="myblog.html">My Blog</a></li>
+                <li><a href="test.html">About</a></li>
+                <li><a href="#footer-content1">Contact</a></li>
+                <li>
+                    <button><span id="name-user"></span><a href="login.html"><i class="fa-solid fa-user"></i></a></button>
+                    <script>
+                        // Lấy thông tin đăng nhập từ localStorage
+                        const username = localStorage.getItem('username');
+                        const password = localStorage.getItem('password')
+                        // Kiểm tra và hiển thị thông điệp chào mừng
+                        if (username) {
+                            document.getElementById('name-user').textContent = username + ' ';
+                        }
+                    </script>
+                </li>
+                <li>
+                    <button id="logoutButton"><a href="index.html"><i class="fa-solid fa-sign-out-alt"></i></a></button>
+                </li>
+            </ul>
+        </nav>
+        </div>  
+        <hr class="line-below">  
+    </header>
+    <section class="main">
+        <article class="blogpost">
+            <div class="header">
+                <time datetime="2024-08-12">August 18, 2024</time>
+                <h1>KHI NÀO NÊN CHUYỂN SANG DÙNG ẢNH ĐEN TRẮNG</h1>
+            </div>
+            <div class="content">               
+                <p class="block-content">Trong một bộ album , hiển nhiên hình màu vẫn nhiều hơn đen trắng, bản thân mình cũng thích những tông màu trầm, phong phú mang lại chiều sâu lẫn cảm xúc cho bức hình. </p>
+                <p class="block-content">TUY NHIÊN, vẫn có những lý do rất thuyết phục để chọn màu đen trắng thay vì ảnh màu sắc. Dưới đây mình liệt kê vài lý do điển hình. </p>
+                
+                <h3 class="title">1. Không thể làm màu vì ánh sáng xấu</h3>
+                <p class="block-content">Đây là lý do không được chính đáng lắm để chuyển sang màu đen trắng nhưng nó cũng hợp lí phết nhờ!. Nhưng đúng thành thật mà nói thì thỉnh thoảng mình chuyển đổi sang đen trắng đơn giản chỉ vì hình đó để màu xấu quá :> Nó sẽ tiết kiệm nhiều thời gian chỉnh sửa hơn nếu bạn thích đen trắng. </p>
+                <div class="img-tip2"><img src="images/cat.jpg"   alt="Màu sắc quá xấu là một lí do hợp lí để chuyển sang đen trắng" class="popup-img"></div>
+                <p class="note">Tấm này mình chụp mèo nhà mình lúc giữa trưa, nắng khá gắt làm màu chênh lệch sáng quá rõ, nhưng khi chuyển qua BW kết quả rất là khả quan. </p> 
+                <h3 class="title">2. Ảnh trông hoài niệm hơn.</h3>
+                <p class="block-content">Có một sự hoài niệm vượt thời gian với ảnh đen trắng mà ảnh màu không bao giờ có thể mang lại được, chắc ai cũng đồng ý với điều này. Chuyển sang BW làm cho bức ảnh trông “có vẻ“ như được chụp trong quá khứ cũ kĩ nào đó chứ không phải thời hiện tại. Hợp với ai theo đuổi phong cách vintage, retro, chụp thiên nhiều về cảm xúc. </p> 
+                <div class="double-img-tip2">
+                    <img src="images/hold.jpg"   alt="Ảnh trắng đen mang cảm giác hoài niệm" class="popup-img">
+                    <img src="images/marry.jpg"   alt="Ảnh trắng đen mang cảm giác hoài niệm" class="popup-img">
+                </div>
+                <h3 class="title">3. Muốn nhấn mạnh các chi tiết</h3>
+                <p class="block-content">Ảnh đen trắng có thể nhấn mạnh các chi tiết như khuôn mặt, ngón tay, ánh mắt ..vv. Nó có độ tương phản cao hơn là sử dụng màu. Mình thường có xu hướng chuyển qua đen trắng khi chụp những chi tiết nhỏ, cử chỉ, ngón tay, lọn tóc mỏng manh...</p>
+                <div class="double-img-tip2">
+                    <img src="images/hand.jpg"   alt="Ảnh trắng đen làm nổi bật chi tiết" class="popup-img">
+                    <img src="images/feet.png"   alt="Ảnh trắng đen làm nổi bật chi tiết" class="popup-img">
+                </div>
+                <h3 class="title">4. Làm giảm thiểu sự phân tâm trong bức hình nữa.</h3>
+                <p class="block-content">Bình thường mình sẽ chuyển từ màu sang đen trắng vì màu sắc trong bức hình sẽ làm mình mất tập trung vào chủ thể hoặc cái mình muốn nhấn mạnh. Các yếu tố đầy màu sắc của tiền cảnh lẫn hậu cảnh đôi khi không được như mình muốn, quá loè loẹt, quá rối thì giải pháp chuyển qua đen trắng vẫn hữu dụng nhất. </p>
+                <img src="images/bride.jpg" alt="Ảnh trắng đen làm giảm sự phân tâm" class="popup-img">
+                <p class="block-content">Đó là mấy lý do mình thấy được thiếu sót gì mọi người comment bên dưới cho mình bổ sung nhé.</p>
+      
+            </div>
+        </article>      
+        <hr class="custom-hr">
+    </section>    
+
+    <section class="comment-place">
+        <h3>Leave a Comment</h3>
+        <form id="commentForm">
+            <label for="comment">Comment:</label>
+            <textarea id="comment" required></textarea>
+            <button type="submit">Submit</button>     
+        </form>
+
+        <h3>Comments</h3>
+        <div id="comments">
+        </div>
+    </section>
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="imgPopup">
+        <div id="caption"></div>
+    </div>
+
+    <div id="footer-content"></div>
+    <footer>
+        <div class="footer-content">
+            <h3>Let me know what's on your mind</h3>
+            <form id="contact-form">
+                <div class="form-left">
+                    <div class="input-container">
+                        <label for="first-name">First name</label>
+                        <input class="first-name" type="text" id="first-name">
+                    </div>
+                    <div class="input-container">
+                        <label for="email-footer">Email *</label>
+                        <input class="email" type="email" id="email-footer">
+                    </div>
+                </div>
+                <div class="form-right">
+                    <div class="input-container">
+                        <label for="last-name">Last Name</label>
+                        <input class="last-name" type="text" id="last-name">
+                    </div>
+                </div>
+            </form>
+                <div class="input-container">
+                    <label for="message">Leave us a message...</label>
+                    <input class="message" type="text" id="message">
+                </div>
+                <div class="button-submit">
+                    <button class="submit-button" type="submit">Submit</button>
+                </div>
+            </div>
+            <div class="content-footer">
+                <p>&copy;2024 by Cat Nguyen Blog. All Rights Reserved.</p>
+                <p>The unauthorized reproduction of any content on this website is illegal.</p>
+            </div>
+    </footer>
+    
+    <script src="JS/tip.js"></script>
+    <script src="JS/scripts.js"></script>
+</body>
+</html>

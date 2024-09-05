@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="CSS/styles.css"> 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:wght@400" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="search-social flex">
+            <div class="search-bar flex">
+                <div class="button_search">
+                    <button type="button" id="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div class="search-container ">
+                    <input type="text" placeholder="Search...">
+                </div>
+                <div class="social-icons-header">
+                    <a href="#"><i class="social-icons-header fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="social-icons-header fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="social-icons-header fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="social-icons-header fa-brands fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="header-container flex">
+            <div class="logo">
+                <h1 class="site-title">Catnguyen</h1>
+                <div class="photography">photographer</div>
+            </div>
+            <div class="menu-icon">&#9776;</div>
+        <nav class="flex">
+            <ul class=" menu flex">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="myblog.html">My Blog</a></li>
+                <li><a href="test.html">About</a></li>
+                <li><a href="#footer-content1">Contact</a></li>
+                <li>
+                    <button><span id="name-user"></span><a href="login.html"><i class="fa-solid fa-user"></i></a></button>
+                    <script>
+                        // Lấy thông tin đăng nhập từ localStorage
+                        const username = localStorage.getItem('username');
+                        const password = localStorage.getItem('password')
+                        // Kiểm tra và hiển thị thông điệp chào mừng
+                        if (username) {
+                            document.getElementById('name-user').textContent = username + ' ';
+                        }
+                    </script>
+                </li>
+                <li>
+                    <button id="logoutButton"><a href="index.html"><i class="fa-solid fa-sign-out-alt"></i></a></button>
+                </li>
+            </ul>
+        </nav>
+        </div>  
+        <hr class="line-below">  
+    </header>
+
+    <main>
+        <section class="thumbnail">
+            <div class="image1"> 
+                <img src="images/water-leaf.jpg" alt="Image 1">
+            </div>
+            <div class="image2"> 
+                <img src="images/girl.jpg" alt="Image 2">
+            </div>
+            <div class="image3"> 
+                <img src="images/sky.jpg" alt="Image 3">
+            </div>
+            <div class="title">
+                <h2>My Life. My Blog.</h2>
+            </div>
+        </section>
+
+        <section class="content">
+            <div class="left-content">
+                <div class="blog-post">
+                    <div class="blog-image">
+                        <img src="images/tip1.jpg" alt="blog-image 1">
+                    </div>
+                    <div class="blog-text">
+                        <div class="date-time">
+                            <span class="date">August 1, 2024</span>
+                            <span class="separator">•</span>
+                            <span class="time">11:00 pm</span>
+                        </div>
+                        <a href="tip1.html"><h2 class="post-title">NHỮNG LẦM TƯỞNG KINH DỊ VỀ NGHỀ PHOTOGRAPHER</h2>
+                            <p class="post-content">Trải qua được mấy năm ngành cưới, mình có đúc kết được mấy điều mình đã từng lầm tưởng về nghề này. Mình liệt kê nhẹ nhàng mấy điều dưới đây, mọi người thấy đúng sai thì chia sẻ ý kiến cá nhân ở dưới nhé...</p></a>
+                        <div class="divider"></div>
+                        <div class="post-meta">
+                            <div class="left-meta">
+                                <span>10 views</span>
+                                <span>0 comment</span>
+                            </div>
+                            <div class="right-meta">
+                                <button id="heartButton">
+                                    <i class="fa fa-heart"></i>
+                                    <span id="likeCount">5</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-post">
+                    <div class="blog-image">
+                        <img src="images/cat.jpg" alt="blog-image 2">
+                    </div>
+                    <div class="blog-text">
+                        <div class="date-time">
+                            <span class="date">August 18, 2024</span>
+                            <span class="separator">•</span>
+                            <span class="time">1:00 am</span>
+                        </div>
+                        <a href="tip2.html"><h2 class="post-title">KHI NÀO NÊN CHUYỂN SANG DÙNG ẢNH ĐEN TRẮNG</h2>
+                            <p class="post-content">Trong một bộ album , hiển nhiên hình màu vẫn nhiều hơn đen trắng, bản thân mình cũng thích những tông màu trầm, phong phú mang lại chiều sâu lẫn cảm xúc cho bức hình... </p></a>
+                        <div class="divider"></div>
+                        <div class="post-meta">
+                            <div class="left-meta">
+                                <span>7 views</span>
+                                <span>0 comment</span>
+                            </div>
+                            <div class="right-meta">
+                                <button id="heartButton2">
+                                    <i class="fa fa-heart"></i>
+                                    <span id="likeCount2">3</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+                <button class="all-posts" onclick="location.href='myblog.html';">All Posts</button>
+            </div>
+            
+
+            <div class="right">
+                <div class="right-content">
+                    <div class="subscribe-box">
+                        <h3>Never miss out<br>on new contents</h3>
+                        <div class="input-container">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email">
+                        </div>                    
+                        <button class="subscribe">Subscribe</button>
+                    </div>
+
+                    <div class="content-grid">
+                        <span>Find me on Instagram</span>
+                    </div>
+                    <div class="image-grid">
+                        <div class="grid-item">
+                            <img src="images/hand-foot-gravel.jpg" alt="grid 1">
+                        </div>
+                        <div class="grid-item">
+                            <img src="images/white-soso.jpg" alt="grid 2">
+                        </div>
+                        <div class="grid-item">
+                            <img src="images/do-w-u-luv.jpg" alt="grid 3">
+                        </div>
+                        <div class="grid-item">
+                            <img src="images/ice-cream.jpg" alt="grid 4">
+                        </div>
+                        <div class="grid-item">
+                            <img src="images/nails.jpg" alt="grid 5">
+                        </div>
+                        <div class="grid-item">
+                            <img src="images/field-of-white-tulip-flowers.jpg" alt="grid 6">
+                        </div>
+                    </div>
+
+                    <div class="social-icons-below-grid">
+                        <div class="flex">
+                            <a href="#"><i class="social-icons-below-grid fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="social-icons-below-grid fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="social-icons-below-grid fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="social-icons-below-grid fa-brands fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+<!-- Footer -->
+<div id="footer-content1"></div>
+<footer>
+    <div class="footer-content">
+        <h3>Let me know what's on your mind</h3>
+        <form id="contact-form">
+            <div class="form-left">
+                <div class="input-container">
+                    <label for="first-name">First name</label>
+                    <input class="first-name" type="text" id="first-name">
+                </div>
+                <div class="input-container">
+                    <label for="email-footer">Email *</label>
+                    <input class="email" type="email" id="email-footer">
+                </div>
+            </div>
+            <div class="form-right">
+                <div class="input-container">
+                    <label for="last-name">Last Name</label>
+                    <input class="last-name" type="text" id="last-name">
+                </div>
+            </div>
+        </form>
+            <div class="input-container">
+                <label for="message">Leave us a message...</label>
+                <input class="message" type="text" id="message">
+            </div>
+            <div class="button-submit">
+                <button class="submit-button" type="submit">Submit</button>
+            </div>
+        </div>
+        <div class="content-footer">
+            <p>&copy;2024 by Cat Nguyen Blog. All Rights Reserved.</p>
+            <p>The unauthorized reproduction of any content on this website is illegal.</p>
+        </div>
+    </footer>
+    <script src="JS/scripts.js"></script>
+</body>
+</html>

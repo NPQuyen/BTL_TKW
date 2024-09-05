@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    
+    <title>Sign up</title>
+</head>
+<body>
+    <div id="signup">
+        <form action="" id="form-signup">
+            <h1 class="signup-heading">SIGN UP</h1>
+            <div class="signup-group flex">
+                <i class="fa-regular fa-user"></i>
+                <input class="signup-input" id="username" type="text" placeholder="Username">
+            </div>
+            <div class="signup-group flex">
+                <i class="fa-solid fa-key"></i>
+                <input class="signup-input" id="password" type="password" placeholder="Password">
+                <i class="fa-regular fa-eye" id="eye"></i> 
+            </div>
+            <div class="signup-group flex">
+                <i class="fa-solid fa-key"></i>
+                <input class="signup-input" id="confirmpassword" type="password" placeholder="Confirm password"> 
+                <i class="fa-regular fa-eye" id="eye-confirm"></i>
+            </div>
+            <span class="changepage">
+                <a class="change" href="login.html">Log in</a>
+            </span>
+            <span  class="signupResult"></span>
+            <br>
+            <br>
+            <input id="signup-submit" type="submit" class="signup-submit" value="SIGN UP">
+            <script src="JS/scripts.js"></script>
+</body>
+</html>

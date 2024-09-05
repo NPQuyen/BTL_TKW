@@ -1,0 +1,126 @@
+/* Sign up */
+.flex {
+    display: flex;
+}
+#signup {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#form-signup {
+    max-width: 400px;
+    background-color: #c5e3f7;
+    color: black;
+    opacity: 0.7;
+    flex-grow: 1;
+    padding: 30px 30px 40px 30px;
+    border: 4px solid #9bc0eb;
+}
+.signup-heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.signup-group {
+    border-bottom: 1px solid black;
+    padding-top: 15px;
+    margin-bottom: 15px;
+}
+.signup-input {
+    background: transparent;
+    border:0;
+    outline: 0;
+    width: 100%;
+    color:rgb(202, 225, 238);
+}
+.signup-input::placeholder {
+    font-family: 'Typography';
+    color: black;
+}
+.changepage {
+    right: 0;
+    text-align: right;
+    display: block;
+}
+.change {
+    color: black;
+}
+.signupResult {
+    color: rgb(7, 129, 70);
+    margin-top: 10px;
+}
+.signup-submit {
+    background: transparent;
+    border: 1px solid black;
+    color: black;
+    width: 100%;
+    padding: 6px 10px;
+    margin-top: 30px;
+}
+.signup-submit:hover {
+    background-color: #9bc0eb;
+}
+
+/* Màu văn bản của ô nhập liệu */
+#password, #confirmpassword {
+    color: black; /* Hoặc màu bạn muốn */
+}
+
+/* Màu của biểu tượng con mắt */
+#eye {
+    color: black; /* Hoặc màu bạn muốn */
+}
+
+
+/* Log in */
+#wrapper {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#form-login {
+    max-width: 400px;
+    background-color: #c5e3f7;
+    color: black;
+    opacity: 0.7;
+    flex-grow: 1;
+    padding: 30px 30px 40px 30px;
+    border: 4px solid #9bc0eb;
+}
+.form-heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.form-group {
+    border-bottom: 1px solid black;
+    padding-top: 15px;
+    margin-bottom: 15px;
+}
+.form-input {
+    background: transparent;
+    border:0;
+    outline: 0;
+    width: 100%;
+    color:black;
+}
+.form-input::placeholder {
+    font-family: 'Typography';
+    color: black;
+}
+.loginResult {
+    color: rgb(7, 129, 70);
+    margin-top: 10px;
+}
+
+.form-submit {
+    background: transparent;
+    border: 1px solid black;
+    color: black;
+    width: 100%;
+    padding: 6px 10px;
+    margin-top: 30px;
+}
+.form-submit:hover {
+    background-color: #9bc0eb;
+}

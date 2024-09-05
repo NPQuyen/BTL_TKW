@@ -1,0 +1,454 @@
+body{
+    padding-top: 70px;
+}
+
+.main > .blogpost {
+    max-width: 80%;
+    margin: 0 auto;
+}
+.main >.blogpost >.header{
+    text-align: center;
+}
+.main> .blogpost> .header >time{
+    font-size: 0.8em;
+
+}
+.main >.blogpost >.header> h1{
+    margin: 50px;
+    font-family: "Prata", system-ui;
+    font-weight: 400;
+    font-size: 1.6em;
+    font-style: italic;
+}
+
+.main >.blogpost >.content> .block-content{
+    width: 60%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+.main >.blogpost >.content> p{
+    font-size: 1em;
+    color: black;   
+    font-weight: 50;
+    word-spacing: 4px;
+    line-height: 1.5;
+}
+.main >.blogpost >.content .title{
+    text-align: center;
+    padding-bottom: 30px;
+}
+.main >.blogpost >.content> img{
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+.triple {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 30px;
+    gap: 0.8rem;
+}
+
+.main >.blogpost >.content> .triple>.first {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.main >.blogpost >.content> .triple>.first img{
+    width: 100%;
+    height: 100%;
+}
+.main >.blogpost >.content> .triple> .last {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 0.8rem;
+}
+
+.main >.blogpost >.content> .triple .last1, .last2 {
+    height: 50%;
+    overflow: hidden;
+}
+.main >.blogpost >.content> .triple .last1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.main >.blogpost >.content> .triple .last2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.double {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 30px;
+    gap: 0.8rem;
+}
+
+.main >.blogpost >.content> .double>.first {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.main >.blogpost >.content> .double>.first img{
+    width: 100%;
+    height: 100%;
+}
+.main >.blogpost >.content> .double>.last {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.main >.blogpost >.content> .double>.last img{
+    width: 100%;
+    height: 100%;
+}
+.quadruple {
+    display: flex;
+    gap: 0.8rem;
+    padding-top: 30px;
+    width: 80%; 
+    margin: 0 auto;
+}
+.main >.blogpost >.content>.quadruple> .left-div, .right-div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:0.6rem;
+}
+.main >.blogpost >.content>.quadruple>  .left-div img, .right-div img {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover;
+}
+.triple-row {
+    display: flex;
+    justify-content: space-between; 
+    gap: 0.8rem;
+    padding-top: 30px;
+    max-width: 80%; 
+    margin: 0 auto; 
+}
+.main >.blogpost >.content>.triple-row> div{
+    flex:1;
+}
+.main >.blogpost >.content>.triple-row img {
+    width: 100%; /* Đảm bảo hình ảnh chiếm toàn bộ chiều rộng của container div */
+    height: auto; /* Đảm bảo hình ảnh giữ nguyên tỷ lệ */
+    display: block;
+}
+.content > img:last-of-type {
+    padding-bottom: 50px;
+    position: relative;
+}
+
+/*pop up*/
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+#myModal {
+    display: none; 
+    position: fixed; 
+    z-index: 1000; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.8);
+    text-align: center;
+}
+#imgPopup {
+    max-width: 90%;  
+    max-height: 90%; 
+    margin-top: 5%;  
+    object-fit: contain; 
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: ghostwhite;
+    padding: 10px 0;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.custom-hr {
+    border: none; 
+    height: 2px; 
+    background-color: #000; 
+    width: 60%; 
+    margin: 20px auto;
+}
+
+.comment-place{
+    width: 80%;
+    margin: 0 auto;
+}
+.comment-place> h3{
+    margin-top: 100px;
+}
+#commentForm {
+    margin-bottom: 20px;
+}
+#commentForm textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+}
+#comments {
+    margin-top: 20px;
+}
+.comment {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+.comment img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+#commentForm button {
+    background-color: #2e3131; 
+    color: white; 
+    padding: 8px 16px;
+    border: none; 
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#commentForm button:hover {
+    background-color: black;
+}
+
+/* Menu chính */
+
+@media (max-width: 850px){
+    
+    .thumbnail .image1, .thumbnail .image2, .thumbnail .image3 { 
+        height: auto;
+    }
+    .content {
+        flex-direction: column;
+    }
+
+    .left-content, .right-cont {
+        width: 100%;
+    }
+
+    .image-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .right{
+        width:100%;
+    }
+    .right-content{
+        margin-left: 0;
+    }
+
+}
+@media (max-width: 700px){
+    .menu {
+        display: none; /* Ẩn menu chính */
+        flex-direction: column;
+        position: absolute;
+        top: 100px; /* Điều chỉnh để menu không bị che khuất */
+        right: 0; /* Đưa menu về bên phải */
+        width: 30%; /* Thu gọn width của menu */
+        background-color: white;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        align-items: flex-start; /* Căn trái các mục menu */
+    }
+
+    .menu.open {
+        display: flex; /* Hiển thị menu khi mở */
+    }
+    .menu ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+
+    .menu li a {
+        text-decoration: none;
+        color: black;
+        font-size: 1em;
+        display: block; /* Đảm bảo toàn bộ khu vực của liên kết có thể nhấn được */
+        padding: 10px; /* Thêm khoảng cách trong liên kết */
+    }
+    
+    .menu li a:hover {
+        color: #5688C1;
+    }
+
+    .content {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 30px;
+    }
+    .thumbnail .title h2{
+        font-size: 30px;
+    }
+    .subscribe-box h3 {
+        font-size: 1.8em; 
+        margin-bottom: 60px; 
+    }
+    .subscribe-box {
+        padding: 80px 20px;
+    }
+    .blog-text .date-time {
+        font-size: 0.7em;
+    }
+    .post-title {
+        font-size: 1.2em;
+        margin: 0px;
+    }
+    .left-content, .right-cont {
+        width: 100%;
+    }
+    .left-content .blog-post {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .blog-post {
+        padding: 0 10px;
+    }
+    .blog-image{
+        width: 90%;
+        height: 300px;
+        object-fit: cover;
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+    .left-content .blog-post{
+        height: auto;
+    }
+    .social-icons-header {
+        display: flex; /* Hiển thị các biểu tượng mạng xã hội theo hàng ngang */
+        justify-content: flex-start; 
+        margin: 5px 0; /* Thêm khoảng cách trên và dưới */
+    }
+
+    .social-icons-header a {
+        margin: 0 10px; /* Khoảng cách giữa các biểu tượng */
+        color: white; /* Màu của biểu tượng */
+        font-size: 1em; /* Kích thước của biểu tượng */
+        text-decoration: none; /* Xóa gạch chân */
+        }
+        .menu-icon {
+            display: block; 
+            margin: auto;
+        }
+
+    /* Hero Section */
+    .hero {
+        margin-top: 20px;
+        padding: 60px 0;
+    }
+
+    .hero h2 {
+        font-size: 1.8em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+    footer #contact-form {
+        width: 70%;
+        margin: 0 auto;
+       
+    }
+    .input-container {
+        width: 60%;
+        margin: 0 auto;
+
+}}
+
+@media (max-width: 400px) {
+    .thumbnail .title h2{
+        font-size: 20px;
+    }
+    .content{
+        padding: 20px;
+    }
+    .blog-post {
+        padding: 0 5px;
+    }
+
+    .post-title {
+        font-size: 18px;
+    }
+
+    .blog-text {
+        font-size: 14px;
+    }
+
+    .right-content {
+        padding: 0 10px;
+    }
+
+    .image-grid {
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+
+    .subscribe-box h3 {
+        font-size: 18px;
+    }
+
+    .subscribe-box .input-container label {
+        font-size: 14px;
+    }
+
+}

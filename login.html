@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    
+    <title>Log in</title>
+</head>
+<body>
+
+    <div id="wrapper">
+        <form action="" id="form-login">
+            <h1 class="form-heading">LOG IN</h1>
+            <div class="form-group flex">
+                <i class="fa-regular fa-user"></i>
+                <input class="form-input" id="username" type="text" placeholder="Username">
+            </div>
+            <div class="form-group flex">
+                <i class="fa-solid fa-key"></i>
+                <input class="form-input" id="password" type="password" placeholder="Password"> 
+                <i class="fa-regular fa-eye" id="eye"></i>
+            </div>
+            <span class="changepage">
+                <a class="change" href="signup.html">Add a new account</a>
+            </span>
+            <span  class="loginResult"></span>
+            <br>
+            <input id="submit" type="submit" class="form-submit" value="LOG IN">
+        </form>
+    </div>
+    <div id="result"></div>
+</body>
+<script src="JS/scripts.js"></script>
+</html>
